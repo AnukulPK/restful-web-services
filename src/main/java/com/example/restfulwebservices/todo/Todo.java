@@ -5,14 +5,17 @@ import java.util.Objects;
 
 public class Todo {
     private long id;
-    private String usernmae;
+    private String username;
     private String description;
     private Date targetDate;
     private boolean isDone;
 
-    public Todo(long id, String usernmae, String description, Date targetDate, boolean isDone) {
+    protected Todo() {
+    }
+
+    public Todo(long id, String username, String description, Date targetDate, boolean isDone) {
         this.id = id;
-        this.usernmae = usernmae;
+        this.username = username;
         this.description = description;
         this.targetDate = targetDate;
         this.isDone = isDone;
@@ -26,12 +29,12 @@ public class Todo {
         this.id = id;
     }
 
-    public String getUsernmae() {
-        return usernmae;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUsernmae(String usernmae) {
-        this.usernmae = usernmae;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getDescription() {
