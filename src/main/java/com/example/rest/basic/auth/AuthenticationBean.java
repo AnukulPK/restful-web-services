@@ -1,4 +1,4 @@
-package com.example.restfulwebservices.basic.auth;
+package com.example.rest.basic.auth;
 
 public class AuthenticationBean {
 
